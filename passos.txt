@@ -1,0 +1,12 @@
+1- Criar Aplicação Ionic
+
+2- Adicionar Capacitor
+3 - Adicionar Autorizações Capacitor
+4- Adicionar pwa-elements
+5- Adicionar pwa do angular
+
+
+X-Cria lista de fotos
+X- Crie a constante do local das fotos
+X- Adicioanr função para tirar e buscar fotos
+
