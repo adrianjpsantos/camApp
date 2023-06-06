@@ -9,10 +9,8 @@ import {
 } from '@capacitor/camera';
 import { Filesystem, Directory } from '@capacitor/filesystem';
 import { Preferences } from '@capacitor/preferences';
-import { Platform } from '@ionic/angular/providers/platform';
 import { Capacitor } from '@capacitor/core';
-import { resolve } from 'dns';
-import { read } from 'fs';
+import { Platform } from '@ionic/angular';
 
 @Injectable({
   providedIn: 'root',
