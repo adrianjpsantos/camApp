@@ -10,8 +10,8 @@ export class ModalPage implements OnInit {
 
   // Dados que vieram por parâmetro do componentProps
   @Input() descricao: string = '';
-  @Input() confianca: string = '';
-  @Input() tags: string[] = [];
+  @Input() confianca: number = 0;
+  @Input() tags: any[] = [];
   @Input() tipo: string = '';
 
   constructor(public modalController: ModalController) { }
@@ -21,6 +21,15 @@ export class ModalPage implements OnInit {
 
   async closeModal() {
     await this.modalController.dismiss();
+  }
+
+  getTags(){
+    if(this.tags instanceof String){
+      return
+    }
+  }
+  getConfianca(){
+      return (parseFloat(this.confianca.toFixed(2))* 100).toString() + "%";
   }
 
 }

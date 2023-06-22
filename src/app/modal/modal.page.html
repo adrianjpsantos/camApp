@@ -14,11 +14,11 @@
       {{descricao}} <br>
       <strong>Confiança: </strong>
       <ion-badge class="direita">
-        {{confianca}}
+        {{getConfianca()}}
       </ion-badge>
     </ion-card-content>
 
-    <ion-item *ngFor="let item of tags" lines="full">
+    <ion-item *ngFor="let item of tags " lines="full">
       <ion-label>{{item | titlecase}}</ion-label>
     </ion-item>
   </ion-card>
